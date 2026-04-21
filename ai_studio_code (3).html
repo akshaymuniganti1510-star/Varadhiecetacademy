@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VARADHI ECET ACADEMY | Your Bridge to Success</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3, .poppins { font-family: 'Poppins', sans-serif; }
+        .bg-brand { background-color: #2563eb; }
+        .text-brand { color: #2563eb; }
+        .border-brand { border-color: #2563eb; }
+        html { scroll-behavior: smooth; }
+        .modal-active { overflow: hidden; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- 1. PRIORITY RESPONSE BAR -->
+    <div class="bg-blue-700 text-white text-center py-1.5 px-4 text-xs md:text-sm font-medium tracking-wide">
+        <i class="fab fa-telegram-plane mr-2"></i> For fast response, <strong>prefer Telegram</strong> for purchase
+    </div>
+
+    <!-- 2. ANNOUNCEMENT BAR -->
+    <div class="bg-yellow-400 text-black text-center py-2 text-sm font-bold shadow-sm">
+        🔥 Premium Pack under ₹100 – Limited Offer
+    </div>
+
+    <!-- 3. TOP ACTION BUTTONS -->
+    <div class="bg-white border-b sticky top-0 z-50 shadow-sm">
+        <div class="container mx-auto px-4 py-3 flex flex-wrap justify-center gap-3">
+            <button onclick="openPurchaseModal()" class="bg-gray-800 text-white px-4 py-2 rounded-full text-xs md:text-sm font-semibold hover:bg-black transition">
+                <i class="fas fa-ticket-alt mr-2"></i>Have a Referral Code?
+            </button>
+            <a href="https://t.me/varadhiecetacademy" target="_blank" class="bg-[#229ED9] text-white px-4 py-2 rounded-full text-xs md:text-sm font-semibold hover:opacity-90 transition">
+                <i class="fab fa-telegram mr-2"></i>Join Telegram Channel
+            </a>
+            <a href="https://whatsapp.com/channel/0029VbCvE4s545v401JqGi1A" target="_blank" class="bg-[#25D366] text-white px-4 py-2 rounded-full text-xs md:text-sm font-semibold hover:opacity-90 transition">
+                <i class="fab fa-whatsapp mr-2"></i>Join WhatsApp Channel
+            </a>
+        </div>
+    </div>
+
+    <!-- 4. HERO SECTION -->
+    <header class="bg-white py-16 border-b">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold text-brand mb-4 uppercase tracking-tight">Varadhi ECET Academy</h1>
+            <p class="text-xl md:text-2xl text-gray-600 mb-6 italic text-brand font-semibold">Your Bridge to ECET Success 🌉</p>
+            <p class="max-w-2xl mx-auto text-gray-600 text-lg mb-8 leading-relaxed">
+                Crack TS ECET & AP ECET without expensive coaching. 
+                Get premium notes, PYQs, mock tests, formulas, and smart preparation guidance at an affordable price.
+            </p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <button onclick="openPurchaseModal()" class="bg-brand text-white px-8 py-3 rounded-lg font-bold hover:bg-blue-700 transition shadow-lg transform active:scale-95">👉 Join Premium Pack</button>
+                <a href="#contact" class="border-2 border-brand text-brand px-8 py-3 rounded-lg font-bold hover:bg-blue-50 transition">👉 Contact Us</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 5. WHY CHOOSE US SECTION -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12 uppercase tracking-wide">💡 Why Students Choose VARADHI ECET ACADEMY</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex items-start">
+                    <i class="fas fa-check-circle text-brand text-xl mt-1 mr-3"></i>
+                    <div>
+                        <h4 class="font-bold">Affordable Premium Content</h4>
+                        <p class="text-sm text-gray-600">High-quality materials under ₹100.</p>
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex items-start">
+                    <i class="fas fa-book text-brand text-xl mt-1 mr-3"></i>
+                    <div>
+                        <h4 class="font-bold">Branch-wise Materials</h4>
+                        <p class="text-sm text-gray-600">EEE, ECE, Mech, Civil, and CSE Packs.</p>
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex items-start">
+                    <i class="fas fa-history text-brand text-xl mt-1 mr-3"></i>
+                    <div>
+                        <h4 class="font-bold">PYQs with Solutions</h4>
+                        <p class="text-sm text-gray-600">Previous year papers with clear answers.</p>
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex items-start">
+                    <i class="fas fa-magic text-brand text-xl mt-1 mr-3"></i>
+                    <div>
+                        <h4 class="font-bold">Smart Strategy</h4>
+                        <p class="text-sm text-gray-600">Formulas and shortcuts for diploma students.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. HOW IT WORKS SECTION -->
+    <section id="how-it-works" class="py-16 bg-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-12 uppercase tracking-wide">📲 Simple Steps to Get Access</h2>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="bg-brand text-white w-12 h-12 rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4">1</div>
+                    <h4 class="font-bold mb-2">Choose Branch</h4>
+                    <p class="text-sm text-gray-600">Select EEE / ECE / MECH / CIVIL / CSE</p>
+                </div>
+                <div>
+                    <div class="bg-brand text-white w-12 h-12 rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4">2</div>
+                    <h4 class="font-bold mb-2">Complete Payment</h4>
+                    <p class="text-sm text-gray-600 italic">Pay via Telegram or WhatsApp</p>
+                </div>
+                <div>
+                    <div class="bg-brand text-white w-12 h-12 rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4">3</div>
+                    <h4 class="font-bold mb-2">Send Proof</h4>
+                    <p class="text-sm text-gray-600">Send screenshot through WhatsApp or Telegram</p>
+                </div>
+                <div>
+                    <div class="bg-brand text-white w-12 h-12 rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4">4</div>
+                    <h4 class="font-bold mb-2">Instant Access</h4>
+                    <p class="text-sm text-gray-600">Receive Google Drive premium access</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. PRICING SECTION -->
+    <section id="pricing" class="py-16 bg-blue-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12 uppercase">💰 Choose Your Plan</h2>
+            <div class="flex flex-wrap justify-center gap-8">
+                <!-- Free Pack -->
+                <div class="bg-white p-8 rounded-2xl border w-full md:w-80 shadow-sm">
+                    <h3 class="text-2xl font-bold mb-4">🆓 Free Pack</h3>
+                    <p class="text-4xl font-bold mb-6 text-gray-400">₹0</p>
+                    <ul class="space-y-3 mb-8 text-sm">
+                        <li><i class="fas fa-check text-green-500 mr-2"></i> Limited Notes</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i> Few PYQs</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i> Formula Sheets</li>
+                    </ul>
+                    <a href="#free-materials" class="block text-center bg-gray-100 border py-3 rounded-lg font-bold hover:bg-gray-200 transition">Free Materials</a>
+                </div>
+                <!-- Premium Pack -->
+                <div class="bg-white p-8 rounded-2xl shadow-2xl border-4 border-brand w-full md:w-96 relative transform md:-translate-y-4">
+                    <div class="absolute top-0 right-0 bg-brand text-white px-4 py-1 rounded-bl-lg text-xs font-bold uppercase tracking-tighter">Recommended</div>
+                    <h3 class="text-2xl font-bold mb-4">👑 Premium Pack</h3>
+                    <p class="text-4xl font-bold mb-2">Under ₹100 Only</p>
+                    <p class="text-sm text-gray-500 mb-6 italic italic">One-time payment</p>
+                    <ul class="space-y-3 mb-8 text-left text-sm font-medium">
+                        <li><i class="fas fa-star text-brand mr-2"></i> Full Branch Materials</li>
+                        <li><i class="fas fa-star text-brand mr-2"></i> All PYQs with Solutions</li>
+                        <li><i class="fas fa-star text-brand mr-2"></i> Subject-wise PDFs</li>
+                        <li><i class="fas fa-star text-brand mr-2"></i> Mock Tests & Practice Questions</li>
+                        <li><i class="fas fa-star text-brand mr-2"></i> Priority Support (Telegram)</li>
+                    </ul>
+                    <button onclick="openPurchaseModal()" class="w-full text-center bg-brand text-white py-4 rounded-lg font-bold hover:bg-blue-700 shadow-lg transform active:scale-95 transition">
+                        👉 Get Premium Access
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. FREE MATERIALS SECTION -->
+    <section id="free-materials" class="py-16 bg-white border-b">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-6 uppercase">📘 Free ECET Study Materials</h2>
+            <p class="mb-8 text-gray-600">Start your preparation with these selected materials for free.</p>
+            <div class="max-w-lg mx-auto bg-gray-50 p-6 rounded-xl border border-dashed border-gray-300 text-left mb-8">
+                <div class="grid grid-cols-2 gap-4 font-semibold">
+                    <span class="text-sm"><i class="fas fa-file-pdf mr-2 text-red-500"></i>Selected Notes</span>
+                    <span class="text-sm"><i class="fas fa-file-pdf mr-2 text-red-500"></i>Formula Sheets</span>
+                    <span class="text-sm"><i class="fas fa-file-pdf mr-2 text-red-500"></i>PYQ Samples</span>
+                    <span class="text-sm"><i class="fas fa-file-pdf mr-2 text-red-500"></i>Imp Questions</span>
+                </div>
+            </div>
+            <a href="https://t.me/varadhiecetacademy" target="_blank" class="inline-block bg-gray-800 text-white px-8 py-3 rounded-lg font-bold hover:bg-black transition">👉 Download Free Materials</a>
+        </div>
+    </section>
+
+    <!-- 9. CONTACT SECTION -->
+    <section id="contact" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-12 uppercase">Contact Us</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <a href="https://t.me/varadhiacademyecet" target="_blank" class="p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition border">
+                    <i class="fab fa-telegram text-4xl text-[#229ED9] mb-4"></i>
+                    <h4 class="font-bold uppercase">Telegram</h4>
+                    <p class="text-sm text-gray-500 italic text-blue-600">t.me/varadhiacademyecet</p>
+                </a>
+                <!-- Corrected WhatsApp Link -->
+                <a href="https://wa.me/919392863182" target="_blank" class="p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition border">
+                    <i class="fab fa-whatsapp text-4xl text-[#25D366] mb-4"></i>
+                    <h4 class="font-bold uppercase">WhatsApp</h4>
+                    <p class="text-sm text-gray-500 italic text-green-600">9392863182</p>
+                </a>
+                <div class="p-6 bg-white rounded-xl shadow-sm border flex flex-col items-center justify-center">
+                    <i class="fas fa-envelope text-4xl text-brand mb-4"></i>
+                    <h4 class="font-bold uppercase">Email</h4>
+                    <p class="text-xs text-gray-500 break-all font-semibold">supportvaradhiecetacademy@gmail.com</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 10. FOOTER -->
+    <footer class="bg-gray-900 text-gray-400 py-12 border-t border-gray-800">
+        <div class="container mx-auto px-6 text-center">
+            <h3 class="text-white text-2xl font-bold mb-2 uppercase">VARADHI ECET ACADEMY 🌉</h3>
+            <p class="text-sm italic mb-4">Your Bridge to ECET Success</p>
+            <p class="text-[10px] uppercase tracking-[0.2em] opacity-50">&copy; 2026 VARADHI ECET ACADEMY. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- 11. PURCHASE MODAL (POPUP) -->
+    <div id="purchaseModal" class="fixed inset-0 bg-black bg-opacity-60 z-[200] hidden items-center justify-center p-4">
+        <div class="bg-white w-full max-w-md rounded-2xl overflow-hidden shadow-2xl relative animate-bounce-in">
+            <div class="bg-brand p-6 text-white text-center">
+                <h3 class="text-2xl font-bold mb-1 uppercase">How to Purchase</h3>
+                <p class="text-sm opacity-90 italic">Choose a platform for instant access</p>
+            </div>
+            <div class="p-8 space-y-4">
+                <!-- Telegram Purchase -->
+                <a href="https://t.me/varadhiacademyecet" target="_blank" class="flex items-center justify-between bg-[#229ED9] hover:bg-blue-500 text-white p-4 rounded-xl transition font-bold group shadow-md">
+                    <span class="flex items-center">
+                        <i class="fab fa-telegram text-2xl mr-4"></i>
+                        Purchase on Telegram
+                    </span>
+                    <i class="fas fa-bolt text-yellow-300 ml-2"></i>
+                </a>
+
+                <div class="text-center text-xs text-gray-400 font-bold uppercase tracking-widest">or</div>
+
+                <!-- Corrected WhatsApp Purchase Link -->
+                <a href="https://wa.me/919392863182" target="_blank" class="flex items-center justify-between bg-[#25D366] hover:bg-green-500 text-white p-4 rounded-xl transition font-bold group shadow-md">
+                    <span class="flex items-center">
+                        <i class="fab fa-whatsapp text-2xl mr-4"></i>
+                        Purchase on WhatsApp
+                    </span>
+                    <i class="fas fa-chevron-right opacity-50"></i>
+                </a>
+
+                <p class="text-center text-[11px] text-gray-500 mt-4 leading-tight">
+                    * Prefer Telegram for faster response and delivery. <br>
+                    * On WhatsApp, send a message to 9392863182.
+                </p>
+            </div>
+            <button onclick="closePurchaseModal()" class="w-full py-4 bg-gray-100 text-gray-400 text-xs font-bold hover:bg-gray-200 transition uppercase tracking-widest">
+                Cancel
+            </button>
+        </div>
+    </div>
+
+    <!-- SCRIPTS -->
+    <script>
+        function openPurchaseModal() {
+            const modal = document.getElementById('purchaseModal');
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+            document.body.classList.add('modal-active');
+        }
+
+        function closePurchaseModal() {
+            const modal = document.getElementById('purchaseModal');
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+            document.body.classList.remove('modal-active');
+        }
+
+        window.onclick = function(event) {
+            const modal = document.getElementById('purchaseModal');
+            if (event.target == modal) { closePurchaseModal(); }
+        }
+    </script>
+
+    <style>
+        @keyframes bounceIn {
+            0% { transform: scale(0.95); opacity: 0; }
+            100% { transform: scale(1); opacity: 1; }
+        }
+        .animate-bounce-in { animation: bounceIn 0.2s ease-out forwards; }
+    </style>
+</body>
+</html>
